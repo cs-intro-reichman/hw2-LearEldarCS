@@ -7,8 +7,8 @@ public class TimeCalc {
         int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         int minToAdd = Integer.parseInt(args[1]);
 
-        int totelMinutes = (hours * 60) + minutes + minToAdd; //change hours to minutes, add all three together
-        int totelHours = totelMinutes / 60; //totel hours, with no remainder
+        int totelMinutes = (hours * 60) + minutes + minToAdd; 
+        int totelHours = totelMinutes / 60; 
         int newHours = totelHours % 24; 
         int newMinutes = totelMinutes - (totelHours * 60);
 
