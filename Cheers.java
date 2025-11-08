@@ -10,11 +10,12 @@ public class Cheers {
         public static void main(String[] args) {
 	
                 String wordInput = args[0];
+                String upperWordInput = wordInput.toUpperCase();
                 int numTimes = Integer.parseInt(args[1]);
                 
-                for (int i = 0; i < wordInput.length(); i++) {
+                for (int i = 0; i < upperWordInput.length(); i++) {
                         
-                        char singleWord = wordInput.charAt(i); //each loop singleWorld would have a different letter
+                        char singleWord = upperWordInput.charAt(i); //each loop singleWorld would have a different letter
                         String specialWord = "AEFHILMNORSX"; //all our special cases, that will be checked each loop
 
                         if (specialWord.indexOf(singleWord) >= 0) {
@@ -27,7 +28,7 @@ public class Cheers {
                 System.out.println("What does that spell?");
 
                 for (int j = 0; j < numTimes; j++) {
-                        System.out.println(wordInput + "!!!");
+                        System.out.println(upperWordInput + "!!!");
                 }
 
 
